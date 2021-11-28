@@ -20,12 +20,10 @@ var randomDieRollOutcome;
 */
 
 var a = "10";
-var b =  '5';
+var b = "5";
 var c = "20";
 var d = "30";
-
-var result;
-
-var randomDieRollOutcome;
-
-var 
+var total = Number(a) + Number (b) + Number(c) + Number(d);
+var result = Math.ceil(total / 4);
+console.log(total);
+console.log(result);
