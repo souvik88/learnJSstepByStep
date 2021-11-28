@@ -29,5 +29,4 @@ console.log(total);
 console.log(result);
 
 var randomValue = Math.floor(Math.random()*6) + 1;
-
-
+console.log(randomValue);
