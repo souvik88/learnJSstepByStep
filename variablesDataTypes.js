@@ -27,3 +27,7 @@ var total = Number(a) + Number (b) + Number(c) + Number(d);
 var result = Math.ceil(total / 4);
 console.log(total);
 console.log(result);
+
+var randomValue = Math.floor(Math.random()*6) + 1;
+
+
