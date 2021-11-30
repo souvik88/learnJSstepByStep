@@ -20,6 +20,9 @@ like they know everything when they don’t just by looking the answers up ;)
 See here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder
 */
 
+function isEven(num) {
+    return (num % 2 === 0);
+}
 
 /*
 Task 2
@@ -41,3 +44,17 @@ getExamResult(110) => 'Cheat'
 As always, the string results must match *exactly* what I’ve put here 
 (including case!), or the tests won’t pass!
 */
+
+function getExamResult(score) {
+    if (score === 0){
+        return "Epic fail";
+    }
+    if (score > 100) {
+        return "Cheat";
+    }
+    if (score >= 50) {
+        return "Pass";
+    }
+    return "Fail";
+
+}
