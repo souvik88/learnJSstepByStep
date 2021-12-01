@@ -12,6 +12,9 @@ remove(myList, 2);
 // myList is now [‘a’, ‘b’, ‘d’];
 */
 
+function remove(list, i) {
+    list.splice(list.length - i, i);
+}
 
 /*Task 2
 
