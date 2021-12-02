@@ -75,3 +75,11 @@ var scores = [50, 120, 180, 10];
 var percentages = calculatePercentages(scores, 200);
 // percentages: [25, 60, 90, 5]
 */
+
+function calculatePercentages(scores, totalPossibleScore) {
+    var percentages = [];
+    for (var i = 0; i < scores.length; i++) {
+        percentages.push((100 / totalPossibleScore) * scores[i]);
+    }
+    return percentages;
+}
