@@ -13,7 +13,7 @@ remove(myList, 2);
 */
 
 function remove(list, i) {
-    list.splice(list.length - i, i);
+    list.splice(i, 1);
 }
 
 /*Task 2
