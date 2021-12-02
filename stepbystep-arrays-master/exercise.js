@@ -20,7 +20,7 @@ function remove(list, i) {
 
 Write a function reversed(list) that takes an array of 
 strings, and returns a single which consists of all the 
-strings in the array, in reverse order, concatonated 
+strings in the array, in reverse order, concatinated 
 and seperated by commas. Note that the function should 
 not add a trailing comma at the end of the reversed 
 string, only between the items. You should also just be 
@@ -46,6 +46,16 @@ You’ll probably also have to use an if/else statement
 or a ternary at some point...
 */
 
+function reversed(list) {
+    var result = "";
+    for(var i = list.length - 1; i >= 0 ; i--) {
+        result = result + list[i];
+        if (i !== 0) {
+            result = result + ",";
+        }
+    }
+    return result;
+}
 
 /*Task 3
 
