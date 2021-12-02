@@ -79,7 +79,7 @@ var percentages = calculatePercentages(scores, 200);
 function calculatePercentages(scores, totalPossibleScore) {
     var percentages = [];
     for (var i = 0; i < scores.length; i++) {
-        percentages.push((100 / totalPossibleScore) * scores[i]);
+        percentages.push((scores[i] / totalPossibleScore) * 100); // (100 / totalPossibleScore) * scores[i]
     }
     return percentages;
 }
